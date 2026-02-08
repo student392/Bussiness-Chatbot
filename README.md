@@ -1,47 +1,44 @@
-## **HR-ASSIST Agentic AI System**
----
-HR ASSIST is an Agentic AI system designed to help HR teams automate routine workflows. This example demonstrates automation of the employee onboarding process, streamlining tasks that typically require manual intervention.
+# **💼 Business Chatbot** <br>
+An AI-powered Business Chatbot built using Python and Natural Language Processing (NLP) to assist users with business-related queries, customer support, and general organizational information through an interactive conversational interface.
 
-In terms of technical architecture, for MCP client we use Claude Desktop and the code base here represents the MCP server with necessary tools that will be used by MCP client 
+## **🧠 Overview** <br>
+This project simulates a virtual business assistant that helps users ask questions related to business services, operations, and general inquiries. It uses NLP techniques to understand user intent and provide meaningful responses, making it a practical project for learning chatbot development, conversational AI, and real-world business automation use cases.
 
-🛠️ Setup Instructions
+## **🚀 Features** <br>
+✅ Interactive conversational chatbot<br>
+✅ Handles business and customer-support queries<br>
+✅ NLP-based intent classification<br>
+✅ Easy-to-extend conversation logic<br>
+✅ Beginner-friendly AI project<br>
+✅ Lightweight and simple to run<br>
 
-To set up and run HR ASSIST, follow these steps:
+## **🧱 Project Structure** <br>
+├── data/                 # Training data / intents<br>
+├── model/                # Trained model files<br>
+├── chatbot.py            # Main chatbot application<br>
+├── train.py              # Model training script<br>
+├── requirements.txt      # Python dependencies<br>
+├── README.md             # Project documentation<br>
+└── LICENSE               # License file<br>
 
-- Configure claude_desktop_config.json
-Add the following configuration to your claude_desktop_config.json file:
+## **⚙️ Installation** <br>
+Install Dependencies<br>
+pip install -r requirements.txt<br>
 
-    ```json
-    {
-    "mcpServers": {
-        "hr-assist": {
-        "command": "C:\\Users\\dhaval\\.local\\bin\\uv",
-        "args": [
-            "--directory",
-            "C::\\code\\atliq-hr-assist",
-            "run",
-            "server.py"
-        ],
-        "env": {
-            "CB_EMAIL": "YOUR_EMAIL",
-            "CB_EMAIL_PWD": "YOUR_APP_PASSWORD"
-        }
-        }
-    }
-    }
-    ```
+## **▶️ Run the Chatbot** <br>
+Start the chatbot using:<br>
+python chatbot.py<br>
+The chatbot will launch and respond to business-related queries through the terminal or configured interface.<br>
 
-- Replace YOUR_EMAIL with your actual email.
-- Replace YOUR_APP_PASSWORD with your email provider’s app-specific password (e.g., for Gmail).
-- Run `uv init` and `uv add mcp[cli]` as per the video tutorial in the course.  
+## **🧪 Training the Model (Optional)** <br>
+To train or retrain the chatbot model:<br>
+python train.py<br>
 
-**Usage**
-- Click on the `+` icon and select the `Add from hr-assist` option, and send the request.
-- Fill the details for the new employee:
+## **📌 Technologies Used** <br>
+Python<br>
+Natural Language Processing (NLP)<br>
+Machine Learning<br>
+Chatbot Development<br>
 
-<img src="resources\image.jpg" alt="Claude desktop prompt with fields" style="width:auto;height:300px;padding-left:30px">
-
-Alternatively, you can draft a custom prompt and let the agent take over.
-
-
-All rights reserver @Codebasics Inc and LearnerX India Private Ltd.
+## **📄 License** <br>
+This project is licensed under the Apache-2.0 license — see the LICENSE file for details.
